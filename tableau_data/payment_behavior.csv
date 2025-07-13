@@ -1,0 +1,15 @@
+payment_type,payment_installments,order_count,avg_payment_value,avg_product_price,avg_rating
+credit_card,1,24711,109.32,75.72,4.17
+boleto,1,19191,176.23,104.14,4.07
+credit_card,2,12052,134.09,97.08,4.11
+credit_card,3,10147,153.64,107.46,4.04
+credit_card,4,6882,178.8,125.17,4.05
+credit_card,10,5137,428.43,288.82,3.89
+credit_card,5,5090,195.73,137.71,4.06
+credit_card,8,4122,306.79,235.41,3.99
+credit_card,6,3800,232.9,154.51,4.06
+voucher,1,3679,64.62,103.3,4.06
+credit_card,7,1560,192.32,143.33,4.08
+debit_card,1,1485,149.03,107.46,4.21
+credit_card,9,618,203.12,149.76,4.14
+credit_card,12,128,323.51,225.81,3.88

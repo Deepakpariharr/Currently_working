@@ -1,0 +1,5 @@
+order_value_segment,order_count,avg_order_value,total_revenue,avg_segment_rating
+Low (< $50),16361,36.87,603210.42,4.25
+Medium ($50-150),48643,93.08,4527821.71,4.18
+High ($150-300),21482,202.75,4355410.05,4.09
+Premium (> $300),9992,600.8,6003223.37,4.02
