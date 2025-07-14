@@ -42,24 +42,23 @@ The dataset can be found here:
 
 This is the file-folder structure of the project:
 
-├── analytics/
-│ ├── extended_analytics.py # Tableau export logic (multiple domain-specific exports)
-│ └── core_analytics.py # RFM, product lifecycle, seller metrics
+├── analytics/                        
+│   ├── extended_analytics.py         # Tableau export logic (multi-domain CSVs)
+│   └── core_analytics.py             # RFM, product lifecycle, seller metrics
 │
-├── tableau_data/ # Output data for Tableau dashboards
-│ ├── customer_retention.csv
-│ ├── payment_behavior.csv
-│ ├── delivery_performance.csv
-│ ├── seasonal_patterns.csv
-│ ├── top_products.csv
-│ ├── customer_geography.csv
-│ ├── order_value_distribution.csv
-│ └── seller_concentration.csv
+├── tableau_data/                     # Output data used for Tableau dashboards
+│   ├── customer_retention.csv
+│   ├── payment_behavior.csv
+│   ├── delivery_performance.csv
+│   ├── seasonal_patterns.csv
+│   ├── top_products.csv
+│   ├── customer_geography.csv
+│   ├── order_value_distribution.csv
+│   └── seller_concentration.csv
 │
-├── dashboard_data/ # Core analytics output
-│
-├── requirements.txt # Python dependencies
-└── README.md
+├── dashboard_data/                   # Raw analytics output (optional)
+├── requirements.txt                  # Python libraries used
+└── README.md                         # Project overview and documentation
 
 
 ---
