@@ -42,9 +42,9 @@ The dataset can be found here:
 
 This is the file-folder structure of the project:
 
-├── analytics/                        
+```├── analytics/                        
 │   ├── extended_analytics.py         # Tableau export logic (multi-domain CSVs)
-│   └── core_analytics.py             # RFM, product lifecycle, seller metrics
+│                                     # RFM, product lifecycle, seller metrics
 │
 ├── tableau_data/                     # Output data used for Tableau dashboards
 │   ├── customer_retention.csv
@@ -59,6 +59,7 @@ This is the file-folder structure of the project:
 ├── dashboard_data/                   # Raw analytics output (optional)
 ├── requirements.txt                  # Python libraries used
 └── README.md                         # Project overview and documentation
+```
 
 
 ---
@@ -71,7 +72,7 @@ This is the file-folder structure of the project:
 - **Geographical Analysis** of buyer-seller locations and on-time delivery rate
 - **Payment Behavior** including types, value per order, and installments
 - **Seasonal & Temporal Trends** broken down by hour, weekday, and month
-- **Cohort Analysis** for long-term retention tracking
+- **Cohort Analysis** for long-term
 
 All outputs are designed to be directly consumed by Tableau.
 
