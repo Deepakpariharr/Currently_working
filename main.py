@@ -6,18 +6,15 @@ import os
 import logging
 from datetime import datetime
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 class ExtendedOlistAnalytics:
-    """Extended analytics for business insights and Tableau dashboard preparation."""
     
     def __init__(self, engine):
         self.engine = engine
         
     def customer_retention_analysis(self):
-        """Simple customer retention analysis - who buys again?"""
         query = """
         SELECT 
             c.customer_state,
@@ -51,7 +48,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
     
     def payment_behavior_analysis(self):
-        """Analyze payment methods and installment patterns"""
         query = """
         SELECT 
             op.payment_type,
@@ -72,7 +68,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def delivery_performance_analysis(self):
-        """Analyze delivery performance by state and time"""
         query = """
         SELECT 
             s.seller_state,
@@ -97,7 +92,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def seasonal_business_patterns(self):
-        """Identify seasonal patterns in business"""
         query = """
         SELECT 
             EXTRACT(YEAR FROM o.order_purchase_timestamp) as year,
@@ -116,7 +110,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def top_products_analysis(self):
-        """Find top performing products with ratings"""
         query = """
         SELECT 
             p.product_id,
@@ -140,7 +133,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def customer_geography_insights(self):
-        """Customer distribution and performance by geography"""
         query = """
         SELECT 
             c.customer_state,
@@ -162,7 +154,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def order_value_distribution(self):
-        """Analyze order value patterns"""
         query = """
         SELECT 
             CASE 
@@ -192,7 +183,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def seller_concentration_analysis(self):
-        """Understand seller market concentration"""
         query = """
         SELECT 
             s.seller_state,
@@ -213,7 +203,6 @@ class ExtendedOlistAnalytics:
         return pd.read_sql(query, self.engine)
 
     def export_tableau_datasets(self, output_dir='tableau_data'):
-        """Export all datasets for Tableau dashboard"""
         os.makedirs(output_dir, exist_ok=True)
         
         datasets = {
